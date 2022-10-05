@@ -40,15 +40,15 @@ function discount (){
 <div class="container">
     <form>
         <div class="form-group">
-        <input type="radio" id="choice 1" name="operations" onclick="chooseOp()" value="times">
+        <input type="radio" id="1" name="operations" onclick="chooseOp()" value="times">
         <label for="first">*</label> 
         </div><br>
         <div class="form-group">
-        <input type="radio" id="choice 2" name="operations" onclick="chooseOp()" value="divide">
+        <input type="radio" id="2" name="operations" onclick="chooseOp()" value="divide">
         <label for="second">/</label> 
         </div><br>
         <div class="form-group">
-        <input type="radio" id="choice 3" name="operations" onclick="chooseOp()" value="exponent">
+        <input type="radio" id="3" name="operations" onclick="chooseOp()" value="exponent">
         <label for="third">**</label>
     </div><br>
     </form>
@@ -61,9 +61,9 @@ function chooseOp()
 {
    let base=document.getElementById("basevalue").value;
    let discount=document.getElementById("discountvalue").value;
-   let times=document.getElementById("choice 1").checked;
-   let divide=document.getElementById("choice 2").checked;
-   let exponent=document.getElementById("choice 3").checked;
+   let times=document.getElementById("1").checked;
+   let divide=document.getElementById("2").checked;
+   let exponent=document.getElementById("3").checked;
    let result2=0;
    if(times)
    {
