@@ -62,5 +62,35 @@ function checkGuess(){
                 }
             }
         </script>
+         <script>
+            let y=0;
+            const wrongguess =[];
+            function endoftheGame()
+            {
+                pwd=document.getElementById("password").value
+                guessing=document.getElementById("guess").value
+                if (pwd == guessing) {
+                    if (wrong > 3) {
+                        alert("Sorry, game over.")
+                    }
+                    else {
+                        correct++
+                        alert("You got it right")
+                        document.getElementById("result").innerHTML = "Correct count:" + correct + " " + "Wrong count:" + wrong
+                    }
+                }
+                else {
+                    if (wrong >= 3) {
+                        alert("Sorry, game over.")
+                    }
+                    else {
+                        wrong++
+                        alert("Wrong Musician")
+                        document.getElementById("result").innerHTML = "Correct count:" + correct + " " + "Wrong count:" + wrong
+                    }
+    
+                }
+            }
+            </script>
 </body>
 </html>
